@@ -1,0 +1,17 @@
+Proceso sueldo
+	
+	Escribir "Introduzca el sueldo basico del empleado: ";
+	Leer sueldoBasico;
+	
+	Escribir "Introduzca el monto por horas extras";
+	Leer montoHrsExtras;
+	
+	totalSinDescuento <- sueldoBasico + montoHrsExtras;
+	descuento <- totalSinDescuento / 5;
+	totalConDescuento <- totalSinDescuento - descuento;
+	
+	Escribir "El sueldo basico es de un valor de: ", sueldoBasico;
+	Escribir "El total del descuento fue de un: ", descuento;
+	Escribir "El total ganado es de un valor de: ", totalConDescuento;
+	
+FinProceso

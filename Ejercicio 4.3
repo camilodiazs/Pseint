@@ -1,0 +1,24 @@
+Proceso notaConceptual
+	
+	Escribir "Introduzca una nota entre 1.0 y 7.0: ";
+	Leer nota;
+	
+	Si (nota >= 1 Y nota <= 3.9) Entonces
+		Escribir "Su nota es insuficiente.";
+	SiNo
+		Si (nota >= 4.0 Y nota <= 4.9) Entonces
+			Escribir "Su nota es suficiente.";
+		SiNo
+			Si (nota >= 5.0 Y nota <= 5.9) Entonces
+				Escribir "Su nota es buena.";
+			SiNo
+				Si (nota >= 6.0 Y nota <= 7.0) Entonces
+					Escribir "Su nota es excelente.";
+				SiNo
+					Escribir "Error. La nota no está dentro del rango solicitado.";
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+FinProceso

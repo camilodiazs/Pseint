@@ -1,0 +1,147 @@
+Proceso empleado
+	
+	Escribir "Ingrese la cantidad de empleados: ";
+	Leer cantEmpleados;
+	
+	Para contador <- 1 Hasta cantEmpleados Con Paso 1 Hacer
+		
+	contadorGrado <- 0;
+	
+	Mientras (contadorGrado < 1) Hacer
+		Escribir "Introduzca el número de grado del empleado ", contador, ":";
+		Escribir "(1) $450000";
+		Escribir "(2) $550000";
+		Escribir "(3) $700000";
+		Leer grado;
+		Si (grado < 1 O grado > 3) Entonces
+			Escribir "";
+			Escribir "Número erróneo. Por favor introduzca uno de los números correspondientes.";
+			Escribir "";
+		SiNo
+			contadorGrado <- contadorGrado + 1;
+		FinSi
+	FinMientras	
+	
+	Si grado == 1 Entonces
+		sueldoBase <- 450000;
+	SiNo
+		Si grado == 2 Entonces
+			sueldoBase <- 550000;
+		SiNo
+			Si grado == 3 Entonces
+				sueldoBase <- 700000;
+			FinSi
+		FinSi
+	FinSi
+	
+	
+	contadorHrs <- 0;
+	
+	Escribir "";
+	Mientras (contadorHrs < 1) Hacer
+		Escribir "Escriba las horas extras trabajadas: ";
+		Leer hrsExtras;
+		Si (hrsExtras < 1) Entonces
+			Escribir "";
+			Escribir "Número erróneo. Debe introducir un número mayor a 0.";
+			Escribir "";
+		SiNo
+			contadorHrs <- contadorHrs + 1;
+		FinSi
+	FinMientras
+	
+	Si (hrsExtras >= 1 Y hrsExtras <= 3) Entonces
+		sueldoBase <- sueldoBase + 2000;
+	SiNo
+		Si (hrsExtras >= 4 Y hrsExtras <= 7) Entonces
+			sueldoBase <- sueldoBase + 3000;
+		SiNo
+			Si (hrsExtras > 7) Entonces
+				sueldoBase <- sueldoBase + 3500;
+			FinSi
+		FinSi
+	FinSi
+	
+	
+	contadorIsapre <- 0;
+	
+	Escribir "";
+	Mientras (contadorIsapre < 1) Hacer
+		Escribir "Introduzca el número de la empresa de salud (ISAPRE) a la que pertenezca: ";
+		Escribir "(1) Colmena";
+		Escribir "(2) Ban Médica";
+		Escribir "(3) Vida 3";
+		Escribir "(4) Fonasa";
+		Leer isapre;
+		Si (isapre < 1 O isapre > 4) Entonces
+			Escribir "";
+			Escribir "Número erróneo. Por favor introduzca uno de los números correspondientes.";
+			Escribir "";
+		SiNo
+			contadorIsapre <- contadorIsapre + 1;
+		FinSi
+	FinMientras
+	
+	Si isapre == 1 Entonces
+		descuentoIsapre <- 6.5;
+	SiNo
+		Si isapre == 2 Entonces
+			descuentoIsapre <- 7.3;
+		SiNo
+			Si isapre == 3 Entonces
+				descuentoIsapre <- 7;
+			SiNo
+				Si isapre == 4 Entonces
+					descuentoIsapre <- 7;
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	
+	contadorAfp <- 0;
+	
+	Escribir "";
+	Mientras (contadorAfp < 1) Hacer
+		Escribir "Introduzca el número del Fondo Previsional (AFP) al que pertenezca: ";
+		Escribir "(1) BanSander";
+		Escribir "(2) Geometrica SA";
+		Escribir "(3) Cumprum";
+		Escribir "(4) Provida";
+		Leer afp;
+		Si (afp < 1 O afp > 4) Entonces;
+			Escribir "";
+			Escribir "Número erróneo. Por favor introduzca uno de los números correspondientes.";
+			Escribir "";
+		SiNo
+			contadorAfp <- contadorAfp + 1;
+		FinSi
+	FinMientras
+	
+	Si afp == 1 Entonces
+		descuentoAfp <- 12;
+	SiNo
+		Si afp == 2 Entonces
+			descuentoAfp <- 13.4;
+		SiNo
+			Si afp == 3 Entonces
+				descuentoAfp <- 12.3;
+			SiNo
+				Si afp == 4 Entonces
+					descuentoAfp <- 12.9;
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	descuentoTotal <- descuentoIsapre + descuentoAfp;
+	sueldoTotal <- (sueldoBase * descuentoTotal) / 100;
+	
+	
+	Escribir "";
+	Escribir "El sueldo total del empleado ", contador, " es de: $", trunc(sueldoTotal);
+	Escribir "";
+	
+	FinPara
+
+FinProceso

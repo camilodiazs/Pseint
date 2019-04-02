@@ -1,0 +1,119 @@
+Algoritmo billetes
+	
+	Escribir "Introduzca su saldo actual: ";
+	Leer sueldoActual;
+	
+	
+	cantBilletes20000 <- sueldoActual / 20000;
+	cantBilletes20000 <- trunc(cantBilletes20000);
+	sueldoActual <- sueldoActual - (cantBilletes20000 * 20000);
+	
+	cantBilletes10000 <- sueldoActual / 10000;
+	cantBilletes10000 <- trunc(cantBilletes10000);
+	sueldoActual <- sueldoActual - (cantBilletes10000 * 10000);
+	
+	cantBilletes5000 <- sueldoActual / 5000;
+	cantBilletes5000 <- trunc(cantBilletes5000);
+	sueldoActual <- sueldoActual - (cantBilletes5000 * 5000);
+	
+	cantBilletes2000 <- sueldoActual / 2000;
+	cantBilletes2000 <- trunc(cantBilletes2000);
+	sueldoActual <- sueldoActual - (cantBilletes2000 * 2000);
+	
+	cantBilletes1000 <- sueldoActual / 1000;
+	cantBilletes1000 <- trunc(cantBilletes1000);
+	sueldoActual <- sueldoActual - (cantBilletes1000 * 1000);
+	
+	cantMonedas500 <- sueldoActual / 500;
+	cantMonedas500 <- trunc(cantMonedas500);
+	sueldoActual <- sueldoActual - (cantMonedas500 * 500);
+	
+	cantMonedas100 <- sueldoActual / 100;
+	cantMonedas100 <- trunc(cantMonedas100);
+	sueldoActual <- sueldoActual - (cantMonedas100 * 100);
+	
+	cantMonedas50 <- sueldoActual / 50;
+	cantMonedas50 <- trunc(cantMonedas50);
+	sueldoActual <- sueldoActual - (cantMonedas50 * 50);
+	
+	cantMonedas10 <- sueldoActual / 10;
+	cantMonedas10 <- trunc(cantMonedas10);
+	sueldoActual <- sueldoActual - (cantMonedas10 * 10);
+	
+	cantMonedas5 <- sueldoActual / 5;
+	cantMonedas5 <- trunc(cantMonedas5);
+	sueldoActual <- sueldoActual - (cantMonedas5 * 5);
+	
+	cantMonedas1 <- sueldoActual / 1;
+	cantMonedas1 <- trunc(cantMonedas1);
+	sueldoActual <- sueldoActual - (cantMonedas1 * 1);
+	
+	
+	Si (cantBilletes20000 = 1) Entonces
+		Escribir cantBilletes20000, " billete de $20000";
+	SiNo
+		Escribir cantBilletes20000, " billetes de $20000";
+	FinSi
+	
+	Si (cantBilletes10000 = 1) Entonces
+		Escribir cantBilletes10000, " billete de $10000";
+	SiNo
+		Escribir cantBilletes10000, " billetes de $10000";
+	FinSi
+	
+	Si (cantBilletes5000 = 1) Entonces
+		Escribir cantBilletes5000, " billete de $5000";
+	SiNo
+		Escribir cantBilletes5000, " billetes de $5000";
+	FinSi
+	
+	Si (cantBilletes2000 = 1) Entonces
+		Escribir cantBilletes2000, " billete de $2000";
+	SiNo
+		Escribir cantBilletes2000, " billetes de $2000";
+	FinSi
+	
+	Si (cantBilletes1000 = 1) Entonces
+		Escribir cantBilletes1000, " billete de $1000";
+	SiNo
+		Escribir cantBilletes1000, " billetes de $1000";
+	FinSi
+	
+	Si (cantMonedas500 = 1) Entonces
+		Escribir cantMonedas500, " moneda de $500";
+	SiNo
+		Escribir cantMonedas500, " monedas de $500";
+	FinSi
+	
+	Si (cantMonedas100 = 1) Entonces
+		Escribir cantMonedas100, " moneda de $100";
+	SiNo
+		Escribir cantMonedas100, " monedas de $100";
+	FinSi
+	
+	Si (cantMonedas50 = 1) Entonces
+		Escribir cantMonedas50, " moneda de $50";
+	SiNo
+		Escribir cantMonedas50, " monedas de $50";
+	FinSi
+	
+	Si (cantMonedas10 = 1) Entonces
+		Escribir cantMonedas10, " moneda de $10";
+	SiNo
+		Escribir cantMonedas10, " monedas de $10";
+	FinSi
+	
+	Si (cantMonedas5 = 1) Entonces
+		Escribir cantMonedas5, " moneda de $5";
+	SiNo
+		Escribir cantMonedas5, " monedas de $5";
+	FinSi
+	
+	Si (cantMonedas1 = 1) Entonces
+		Escribir cantMonedas1, " moneda de $1";
+	SiNo
+		Escribir cantMonedas1, " monedas de $1";
+	FinSi
+	
+
+FinAlgoritmo

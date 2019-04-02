@@ -1,0 +1,29 @@
+Proceso alumnosAlgoritmo
+	
+	Escribir "Introduzca la cantidad de almunos que aprobaron la asignatura: ";
+	Leer alumAprob;
+	Escribir "Introduzca la cantidad de almunos que reprobaron la asignatura: ";
+	Leer alumReprob;
+	Escribir "Introduzca la cantidad de almunos notables de la asignatura: ";
+	Leer alumNotab;
+	Escribir "Introduzca la cantidad de almunos sobresalientes de la asignatura: ";
+	Leer alumSobre;
+	
+	totalAlumnos <- (alumAprob + alumReprob);
+	
+	porcentajeAprob <- (alumAprob * 100) / totalAlumnos;
+	porcentajeReprob <- (alumReprob * 100) / totalAlumnos;
+	
+	porcentajeNotab <- (alumNotab * 100) / AlumAprob;
+	porcentajeSobre <- (alumSobre * 100) / AlumAprob;
+	
+	Si ((alumNotab + alumSobre) > (alumAprob)) Entonces
+		Escribir "Las cantidades de alumnos notables y sobresalientes exceden la cantidad de alumnos aprobados. Por favor introduzca una cifra coherente.";
+	SiNo
+		Escribir "El porcentaje de alumnos aprobados es de un: ", redon(porcentajeAprob), "%";
+		Escribir "El porcentaje de alumnos reprobados es de un: ", redon(porcentajeReprob), "%";
+		Escribir "El porcentaje de alumnos notables es de un: ", redon(porcentajeNotab), "%";
+		Escribir "El porcentaje de alumnos sobresalientes es de un: ", redon(porcentajeSobre), "%";
+	FinSi
+
+FinProceso

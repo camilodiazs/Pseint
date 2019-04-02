@@ -1,0 +1,19 @@
+Proceso ventaAuto
+	
+	Escribir "Introduzca el precio base del vehículo: ";
+	Leer precioBase;
+	
+	gananciaVendedor <- (precioBase * 8) / 100;
+	impuestoLocal <- (precioBase * 3) / 100;
+	impuestoEstatal <- (precioBase * 3) / 100;
+	
+	precioTotal <- precioBase + gananciaVendedor + impuestoLocal + impuestoEstatal;
+	
+	Escribir "El monto a pagar es de un total de: $", precioTotal;
+	Escribir "";
+	Escribir "($", precioBase, " por el vehículo)";
+	Escribir "($", gananciaVendedor, " por el porcentaje de la ganancia del vendedor)";
+	Escribir "($", impuestoLocal, " por el impuesto local)";
+	Escribir "($", impuestoEstatal, " por el impuesto estatal)";
+	
+FinProceso

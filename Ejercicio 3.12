@@ -1,0 +1,16 @@
+Proceso clinica
+	
+	Escribir "Introduzca la cantidad del presupuesto anual para la clínica: ";
+	Leer presupuesto;
+	
+	kinesiologia <- (presupuesto * 20) / 100;
+	ginecologia <- (presupuesto * 25) / 100;
+	traumatologia <- (presupuesto * 30) / 100;
+	pediatria <- (presupuesto * 25) / 100;
+	
+	Escribir "El monto anual de kinesiología es de: ", kinesiologia, " pesos.";
+	Escribir "El monto anual de ginecología es de: ", ginecologia, " pesos.";
+	Escribir "El monto anual de traumatología es de: ", traumatologia, " pesos.";
+	Escribir "El monto anual de pediatría es de: ", pediatria, " pesos.";
+	
+FinProceso

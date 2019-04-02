@@ -1,0 +1,21 @@
+Proceso calificacionFinal
+	
+	Escribir "Introduzca el promedio que obtuvo en las calificaciones de parciales: ";
+	Leer parciales;
+	Escribir "Introduzca el promedio que obtuvo en talleres: ";
+	Leer talleres;
+	Escribir "Introduzca el promedio que obtuvo de tareas: ";
+	Leer tareas;
+	Escribir "Introduzca el promedio que obtuvo de esposición de investigación: ";
+	Leer exposicion;
+	
+	parcialesPostPorcent <- (parciales * 50) / 100;
+	talleresPostPorcent <- (talleres * 25) / 100;
+	tareasPostPorcent <- (tareas * 15) / 100;
+	exposicionPostPorcent <- (exposicion * 10) / 100;
+	
+	calificFinal <- (parcialesPostPorcent + talleresPostPorcent + tareasPostPorcent + exposicionPostPorcent);
+	
+	Escribir "Su calificación final en la materia de algoritmos es: ", calificFinal;
+	
+FinProceso

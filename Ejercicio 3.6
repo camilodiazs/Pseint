@@ -1,0 +1,27 @@
+Proceso restaurante
+	
+	Escribir "Escriba la cantidad de completos italianos que va a pedir: ";
+	Leer cantItaliano;
+	Escribir "Escriba la cantidad de completos a la chilena que va a pedir: ";
+	Leer cantChilena;
+	Escribir "Escriba la cantidad de hamburguesas con queso que va a pedir: ";
+	Leer cantHamburguesa;
+	Escribir "Escriba la cantidad de churrascos que va a pedir: ";
+	Leer cantChurrasco;
+	Escribir "Escriba la cantidad de botellas de cerveza que va a pedir: ";
+	Leer cantCerveza;
+	Escribir "Escriba la cantidad de bebidas que va a pedir: ";
+	Leer cantBebida;
+	
+	precioItalianoIVA <- (cantItaliano * 690) + (cantItaliano * (690 * 19) / 100);
+	precioChilenaIVA <- (cantChilena * 890) + (cantChilena * (890 * 19) / 100);
+	precioHamburguesaIVA <- (cantHamburguesa * 990) + (cantHamburguesa * (990 * 19) / 100);
+	precioChurrascoIVA <- (cantChurrasco * 1100) + (cantChurrasco * (1100 * 19) / 100);
+	precioCervezaIVA <- (cantCerveza * 700) + (cantCerveza * (700 * 19) / 100);
+	precioBebidaIVA <- (cantBebida * 500) + (cantBebida * (500 * 19) / 100);
+	
+	cuentaTotal <- redon(precioItalianoIVA + precioChilenaIVA + precioHamburguesaIVA + precioChurrascoIVA + precioCervezaIVA + precioBebidaIVA);
+	
+	Escribir "Su cuenta total es de: $", cuentaTotal;
+	
+FinProceso

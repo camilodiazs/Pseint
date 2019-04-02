@@ -1,0 +1,16 @@
+Proceso amigosVehiculo
+	
+	Escribir "Introduzca la cantidad de dinero que aporta cada integrante: ";
+	Leer amigo1, amigo2, amigo3;
+	
+	total <- amigo1 + amigo2 + amigo3;
+	
+	porcentaje1 <- (100 * amigo1) / total;
+	porcentaje2 <- (100 * amigo2) / total;
+	porcentaje3 <- (100 * amigo3) / total;
+	
+	Escribir "El primer amigo aportó con un ", redon(porcentaje1), "% de dinero.";
+	Escribir "El segundo amigo aportó con un ", redon(porcentaje2), "% de dinero.";
+	Escribir "El tercer amigo aportó con un ", redon(porcentaje3), "% de dinero.";
+	
+FinProceso
